@@ -1,0 +1,33 @@
+$maincolor:#b1e78d;
+
+.red{
+    color : $maincolor;
+}
+
+@mixin 함수(){
+    background-color: #eeeeee;
+    padding:20px;
+    border-radius: 5px;
+    width:100%;
+    max-width:500px;
+    margin:auto;
+}
+
+.my-alert{
+    @include 함수()
+}
+
+.my-alert p{
+    margin-bottom:0;
+}
+
+// div.container {
+//     h4{
+//         color:blue;
+//     }
+
+//     p{
+//         color:$maincolor;
+//     }    
+
+// }
